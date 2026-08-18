@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brett Trainor: An educated point of view for Gen X</title>
-<meta name="description" content="Hi, I'm Brett. I'm a high-functioning lazy person. I help Gen X stop overcomplicating life, take back their time, and build their best life on their own terms. Weekly newsletter and podcast. Featured in Fortune, Forbes, HBR, and Inc.">
+<meta name="description" content="Hi, I'm Brett. I'm a high-functioning lazy person. I help Gen X stop overcomplicating life, take back their time, and build their best life on their own terms. The Anti-Grind newsletter and the Brett Trainor Unplugged podcast. Featured in Fortune, Forbes, HBR, and Inc.">
 
 <meta property="og:title" content="Brett Trainor">
 <meta property="og:description" content="A high-functioning lazy person helping Gen X take back their time and build their best life on their own terms.">
@@ -79,6 +79,13 @@
   .speaking h2{color:#fff}
   .speaking .sec-eyebrow{color:#E6A074}
   .speaking .lede{color:#C9C1B1}
+  /* light-background content section (dark text, readable on cream) */
+  .content-light{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .content-light h2{color:var(--green)}
+  .content-light .sec-eyebrow{color:var(--orange)}
+  .content-light .lede{color:var(--muted)}
+  .content-light .talk .tt{color:var(--green)}
+  .content-light .talk p{color:var(--ink)}
   .talks{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
   .talk{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:26px 24px}
   .talk .tt{font-family:var(--display);font-size:22px;color:#fff;line-height:1.2}
@@ -232,13 +239,13 @@
 
       <div class="talks">
         <article class="talk reveal">
-          <div class="tt">The Newsletter</div>
-          <p>My latest thinking, delivered. What I'm testing, what's working, what isn't, and what it means for Gen X. The best place to start.</p>
+          <div class="tt">The Anti-Grind</div>
+          <p>My newsletter. The latest thinking, delivered. What I'm testing, what's working, what isn't, and what it means for Gen X who are done with the grind. The best place to start.</p>
           <p style="margin-top:14px"><a class="go" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></p>
         </article>
         <article class="talk reveal">
-          <div class="tt">The Podcast</div>
-          <p>Conversations with people further down the path, and experts around the world, on how to work less, live more, and stop grinding. I ask them all if they'd go back. Nobody says yes.</p>
+          <div class="tt">Brett Trainor Unplugged</div>
+          <p>My podcast. No production polish, no script, just me and honest conversations with people further down the path, on how to work less, live more, and quit the grind. I ask them all if they'd go back. Nobody says yes.</p>
           <p style="margin-top:14px"><a class="go" href="https://open.spotify.com/show/5UQSv8iKydo8E2cevuIAB5" target="_blank" rel="noopener">Listen <span class="arrow">&rarr;</span></a></p>
         </article>
         <article class="talk reveal">
@@ -256,7 +263,7 @@
   </section>
 
   <!-- POV / WHAT I BELIEVE -->
-  <section id="pov" class="speaking" style="background:var(--cream-2)">
+  <section id="pov" class="content-light">
     <div class="wrap">
       <p class="sec-eyebrow">What I Believe</p>
       <h2>What I keep seeing in people who figured it out.</h2>
@@ -292,7 +299,7 @@
       </div>
       <div>
         <blockquote class="stand">We overcomplicate everything, we give away too much of our time, and we keep asking for permission we don't need. I spent years learning that the hard way. You don't have to.</blockquote>
-        <p style="margin-top:26px;color:var(--muted);font-size:16.5px">Now I host a podcast, write a weekly newsletter, and share everything I learn about living well on your own terms, so Gen X doesn't have to figure it out alone.</p>
+        <p style="margin-top:26px;color:var(--muted);font-size:16.5px">Now I host the Brett Trainor Unplugged podcast, write The Anti-Grind newsletter, and share everything I learn about living well on your own terms, so Gen X doesn't have to figure it out alone.</p>
         <div class="life">
           <figure>
             <img src="run.jpg" alt="Brett with family at the half marathon finish line">
