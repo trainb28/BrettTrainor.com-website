@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brett Trainor: An educated point of view for Gen X</title>
-<meta name="description" content="Hi, I'm Brett. I'm a high-functioning lazy person. I help Gen X stop overcomplicating life, take back their time, and build their best life on their own terms. The Anti-Grind newsletter and the Brett Trainor Unplugged podcast. Featured in Fortune, Forbes, HBR, and Inc.">
+<meta name="description" content="Build the life you want and fund it in the fewest hours possible. The Collective, Brett Trainor Unplugged, and Brett's Notebook, for corporate Gen X in or out. Brett's Notebook newsletter and the Brett Trainor Unplugged podcast. Featured in Fortune, Forbes, HBR, and Inc.">
 
 <meta property="og:title" content="Brett Trainor">
-<meta property="og:description" content="A high-functioning lazy person helping Gen X take back their time and build their best life on their own terms.">
+<meta property="og:description" content="Build the life you want and fund it in the fewest hours possible. For corporate Gen X, in or out.">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,6 +171,29 @@
     *{transition:none!important;scroll-behavior:auto!important}
     .reveal{opacity:1;transform:none}
   }
+
+  /* collective */
+  .collective{background:var(--pine);color:#EFE7D7}
+  .collective h2{color:#fff}
+  .collective .sec-eyebrow{color:#E6A074}
+  .collective .lede{color:#C9C1B1}
+  .sessions{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+  .sess{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:11px;padding:18px 16px}
+  .sess .sn{font-family:var(--display);font-size:15px;color:#E6A074;line-height:1}
+  .sess .st{font-weight:600;font-size:15.5px;color:#fff;margin-top:8px;line-height:1.25}
+  .sess p{font-size:14px;color:#C9C1B1;margin-top:7px;line-height:1.45}
+  .price-row{margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,.16);display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+  .price{font-family:var(--display);font-size:42px;color:#fff;line-height:1}
+  .price span{font-family:var(--body);font-size:15px;font-weight:500;color:#C9C1B1}
+  .price-row p{color:#C9C1B1;font-size:16px;max-width:30em;flex:1;min-width:240px}
+  .pod-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .pod-stats{display:flex;gap:30px;flex-wrap:wrap;margin-top:26px}
+  .pod-stats div{min-width:110px}
+  .pod-stats b{display:block;font-family:var(--display);font-size:30px;color:var(--green);line-height:1}
+  .pod-stats small{font-size:13.5px;color:var(--muted);display:block;margin-top:5px}
+  .soft{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  @media (max-width:920px){.sessions{grid-template-columns:repeat(2,1fr)}.pod-wrap{grid-template-columns:1fr;gap:32px}}
+  @media (max-width:620px){.sessions{grid-template-columns:1fr}}
   :focus-visible{outline:3px solid var(--orange);outline-offset:2px;border-radius:4px}
 </style>
 <!-- Fathom - beautiful, simple website analytics -->
@@ -182,13 +205,13 @@
 
 <header class="site-head">
   <div class="wrap head-inner">
-    <a class="brand" href="#top">Brett Trainor<small>Best life. Your terms.</small></a>
+    <a class="brand" href="#top">Brett Trainor<small>Build the life you&rsquo;ve earned.</small></a>
     <nav class="nav" aria-label="Primary">
-      <a href="#content">Podcast &amp; Newsletter</a>
-      <a href="#pov">What I Believe</a>
+      <a href="#collective">The Collective</a>
+      <a href="#podcast">Podcast</a>
+      <a href="#newsletter">Newsletter</a>
       <a href="#story">About</a>
-      <a href="#work">Work With Me</a>
-      <a class="pill" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Get the newsletter</a>
+      <a class="pill" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Join The Collective</a>
     </nav>
     <button class="nav-toggle" onclick="document.querySelector('.nav').style.display='flex';this.style.display='none'">Menu</button>
   </div>
@@ -201,11 +224,11 @@
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow">Brett Trainor</p>
-        <h1>Hi, I'm Brett. I'm a high-functioning lazy&nbsp;person. <em>I wasn't always this way.</em></h1>
-        <p class="sub">Here's what I've figured out: we overcomplicate everything, we give away too much of our time, and we keep asking for permission we don't need. So stop asking.</p>
-        <p class="sub" style="margin-top:16px">Gen X is at an inflection point. Decades of life ahead, no playbook, and no one giving us a straight, educated point of view. So I'm building one in the open, learning from people further down the path, testing what works and what doesn't, and sharing all of it. If you want to build your best life on your own terms, follow along.</p>
+        <h1>Build the life you want. <em>Fund it in the fewest hours possible.</em></h1>
+        <p class="sub">Corporate quit on me at 45. Six years later I've made money fifteen different ways, and I'm still figuring it out in public alongside a few thousand other Gen Xers.</p>
+        <p class="sub" style="margin-top:16px">Corporate is ending earlier. We're living longer. Nobody wrote a playbook for this part, so I'm building one out loud. Testing what works, sharing what doesn't. In corporate or out.</p>
         <div class="cta-row">
-          <a class="btn" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Get the newsletter</a>
+          <a class="btn" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Join The Collective</a>
           <a class="btn-ghost" href="https://open.spotify.com/show/5UQSv8iKydo8E2cevuIAB5" target="_blank" rel="noopener">Listen to the podcast</a>
         </div>
       </div>
@@ -230,44 +253,62 @@
     </div>
   </section>
 
-  <!-- CONTENT -->
-  <section id="content" class="speaking">
+  <!-- THE COLLECTIVE -->
+  <section id="collective" class="collective">
     <div class="wrap">
-      <p class="sec-eyebrow">The Work</p>
-      <h2>Follow along.</h2>
-      <p class="lede">Every week I share what I'm learning about building a life on your own terms, in your work, your money, your health, and your time. One newsletter, one podcast, no fluff. Come for the ideas, stay because they work.</p>
+      <p class="sec-eyebrow">The Collective</p>
+      <h2>The hard part isn't leaving. It's the money.</h2>
+      <p class="lede">Every Gen Xer I talk to hits the same wall. You can picture the life you want. You just can't see how to pay for it without a job somebody else controls. That's the stone everybody has to get over, and it's the one thing you shouldn't try to figure out alone.</p>
+      <p class="lede" style="margin-top:14px">The Collective shortcuts the learning curve on making money outside of corporate. Not maximum revenue. Enough, in the fewest hours, so the time stays yours.</p>
 
-      <div class="talks">
-        <article class="talk reveal">
-          <div class="tt">The Anti-Grind</div>
-          <p>My newsletter. The latest thinking, delivered. What I'm testing, what's working, what isn't, and what it means for Gen X who are done with the grind. The best place to start.</p>
-          <p style="margin-top:14px"><a class="go" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></p>
-        </article>
-        <article class="talk reveal">
-          <div class="tt">Brett Trainor Unplugged</div>
-          <p>My podcast. No production polish, no script, just me and honest conversations with people further down the path, on how to work less, live more, and quit the grind. I ask them all if they'd go back. Nobody says yes.</p>
-          <p style="margin-top:14px"><a class="go" href="https://open.spotify.com/show/5UQSv8iKydo8E2cevuIAB5" target="_blank" rel="noopener">Listen <span class="arrow">&rarr;</span></a></p>
-        </article>
-        <article class="talk reveal">
-          <div class="tt">The Tools</div>
-          <p>The frameworks I build as I go, simple, tested, free. For taking back your time, funding your life, and cutting the overcomplication. More added as I make them.</p>
-          <p style="margin-top:14px"><a class="go" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Get access <span class="arrow">&rarr;</span></a></p>
-        </article>
+      <div class="sessions">
+        <article class="sess reveal"><div class="sn">01</div><div class="st">Monday Motivation &amp; Friday Finish</div><p>Weekly member-led accountability. Commit Monday, report Friday.</p></article>
+        <article class="sess reveal"><div class="sn">02</div><div class="st">Your peer group</div><p>Just Getting Started for your first revenue. The $10K Group for scaling what works.</p></article>
+        <article class="sess reveal"><div class="sn">03</div><div class="st">Sales &amp; Marketing 101</div><p>One topic a month, then open Q&amp;A. Pricing, outreach, positioning, closing.</p></article>
+        <article class="sess reveal"><div class="sn">04</div><div class="st">Collaboration &amp; Ideation</div><p>Where we find revenue streams that repeat, and share the ones that work.</p></article>
+        <article class="sess reveal"><div class="sn">05</div><div class="st">Guest sessions</div><p>People who built something, telling you how. Including what failed.</p></article>
+        <article class="sess reveal"><div class="sn">06</div><div class="st">Local chapters</div><p>Peers in your city. A coffee beats a Zoom square.</p></article>
+        <article class="sess reveal"><div class="sn">07</div><div class="st">Sales &amp; Marketing Q&amp;A chat</div><p>Ask any day. Answers from people who already solved it.</p></article>
+        <article class="sess reveal"><div class="sn">&#43;</div><div class="st">You don't have to have quit</div><p>Building income while you still have a paycheck is the easiest version of this you'll ever get.</p></article>
       </div>
 
-      <div class="speak-foot">
-        <p>New newsletter and podcast episode most weeks. Publish-when-I-have-something-worth-saying, but always at least one of each. Subscribe and you won't miss it.</p>
-        <a class="btn-light" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Get the newsletter</a>
+      <div class="price-row">
+        <div class="price">$149<span>/month</span></div>
+        <p>Cancel anytime. Most sessions are led by members and guests, not by me. That's the point.</p>
+        <a class="btn-light" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Join The Collective</a>
       </div>
     </div>
   </section>
 
-  <!-- POV / WHAT I BELIEVE -->
+  <!-- PODCAST -->
+  <section id="podcast">
+    <div class="wrap pod-wrap">
+      <div>
+        <p class="sec-eyebrow">The Podcast</p>
+        <h2>Brett Trainor Unplugged</h2>
+        <p class="lede">A Gen X quest to build the life we've earned.</p>
+        <p class="lede" style="margin-top:14px">No script, no production, no guru voice. I'm figuring this out and I bring in people who can help me, and us. Money, work, health, what the next forty years actually look like. I ask them all if they'd go back. Nobody says yes.</p>
+        <div class="pod-stats">
+          <div><b>350</b><small>episodes and counting</small></div>
+          <div><b>110K</b><small>across platforms</small></div>
+          <div><b>6</b><small>years out, still learning</small></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="https://open.spotify.com/show/5UQSv8iKydo8E2cevuIAB5" target="_blank" rel="noopener">Listen on Spotify</a>
+        </div>
+      </div>
+      <div>
+        <blockquote class="stand">A few steps down the trail, turning around to tell you what I see. Wins and flops, honestly, as I go.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- POV -->
   <section id="pov" class="content-light">
     <div class="wrap">
       <p class="sec-eyebrow">What I Believe</p>
       <h2>What I keep seeing in people who figured it out.</h2>
-      <p class="lede">Six years into this, and hundreds of conversations later, the people living the way I want to live all look kind of the same. Not rich, not perfect. Just clear. Here's the pattern.</p>
+      <p class="lede">Six years in and hundreds of conversations later, the people living the way I want to live all look kind of the same. Not rich, not perfect. Just clear. Here's the pattern.</p>
 
       <div class="talks">
         <article class="talk reveal">
@@ -291,15 +332,14 @@
     <div class="wrap story-grid">
       <div>
         <p class="sec-eyebrow">About</p>
-        <h2>I wasn't always this way.</h2>
-        <p>I spent more than 25 years in corporate go-to-market roles. Good jobs, work I mostly liked, paid well. On paper nothing was wrong. But something was off and I couldn't name it. I was high-functioning, and quietly miserable. The commute, the endless calls I was done with but kept taking, the grind of looking busy.</p>
-        <p>Then they made the decision for me. I got kicked out. What I decided was that I wasn't going back.</p>
+        <h2>Corporate quit on me at 45.</h2>
+        <p>I spent more than 25 years in corporate go-to-market roles. Good jobs, work I mostly liked, paid well. On paper nothing was wrong. But something was off and I couldn't name it. I was high-functioning and quietly miserable. The commute, the endless calls I was done with but kept taking, the grind of looking busy.</p>
+        <p>Then they made the decision for me. What I decided was that I wasn't going back.</p>
         <p>Getting out didn't fix it. I thought the hard part would be replacing my income. It wasn't. When I first went solo I filled every hour, optimized everything, and felt guilty the second I wasn't busy. I'd escaped the grind and rebuilt it in my own house.</p>
-        <p>Slowly, I figured out the thing nobody tells you: the answer wasn't more hustle. It was less. Simpler. More intentional. I got lazy, on purpose, about everything that didn't matter, and got happier, healthier, and honestly more effective than I ever was grinding. Six years later, I'm still on that quest, and still learning.</p>
+        <p>The answer turned out to be less, not more. Simpler. More intentional. I got lazy on purpose about everything that didn't matter and ended up happier, healthier, and more effective than I ever was grinding. Six years later I'm still on the quest, and still learning.</p>
       </div>
       <div>
-        <blockquote class="stand">We overcomplicate everything, we give away too much of our time, and we keep asking for permission we don't need. I spent years learning that the hard way. You don't have to.</blockquote>
-        <p style="margin-top:26px;color:var(--muted);font-size:16.5px">Now I host the Brett Trainor Unplugged podcast, write The Anti-Grind newsletter, and share everything I learn about living well on your own terms, so Gen X doesn't have to figure it out alone.</p>
+        <blockquote class="stand">We overcomplicate everything, we give away too much of our time, and we keep asking for permission we don't need. I learned that the hard way. You don't have to.</blockquote>
         <div class="life">
           <figure>
             <img src="run.jpg" alt="Brett with family at the half marathon finish line">
@@ -314,31 +354,36 @@
     </div>
   </section>
 
-  <!-- WORK WITH ME -->
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="soft">
+    <div class="wrap">
+      <p class="sec-eyebrow">Not ready for that?</p>
+      <h2>Start with the notebook.</h2>
+      <p class="lede">No pressure and no pitch. Brett's Notebook is where I write everything down first, and it's the cheapest way to find out whether we think alike before you spend a dollar.</p>
+
+      <div class="talks" style="grid-template-columns:repeat(2,1fr)">
+        <article class="talk reveal" style="background:#fff;border-color:var(--line)">
+          <div class="tt" style="color:var(--green)">Brett's Notebook</div>
+          <p style="color:var(--ink)">What I'm testing, what's working, what isn't. Free, most weeks, and everything I learn shows up here first.</p>
+          <p style="margin-top:14px"><a class="go" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></p>
+        </article>
+        <article class="talk reveal" style="background:#fff;border-color:var(--line)">
+          <div class="tt" style="color:var(--green)">The Tools</div>
+          <p style="color:var(--ink)">The frameworks I build as I go. Simple, tested, free. For taking back your time, funding your life, and cutting the overcomplication.</p>
+          <p style="margin-top:14px"><a class="go" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Get access <span class="arrow">&rarr;</span></a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKING -->
   <section id="work">
     <div class="wrap">
-      <p class="sec-eyebrow">Work With Me</p>
-      <h2>Want to go deeper?</h2>
-      <p class="lede">Most of what I do is free, the newsletter, the podcast, the tools. When you're ready for more, there are a couple of ways to work together.</p>
-      <div class="trp-grid">
-        <article class="tcard reveal">
-          <span class="kicker">Community</span>
-          <h3>The Collective</h3>
-          <p>A community of Gen Xers doing this together. Local chapters, monthly working sessions, and a focus on the thing most people need first: funding the life, with low-friction income and real business ideas.</p>
-          <a class="go" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Learn more <span class="arrow">&rarr;</span></a>
-        </article>
-        <article class="tcard reveal">
-          <span class="kicker">Challenges</span>
-          <h3>Cohorts &amp; Challenges</h3>
-          <p>Focused, time-boxed programs built around what I'm working on right now. Take back 10 hours a week. Test a low-friction income idea. Run alongside other people doing the same.</p>
-          <a class="go" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Get notified <span class="arrow">&rarr;</span></a>
-        </article>
-        <article class="tcard reveal">
-          <span class="kicker">Speaking</span>
-          <h3>Talks &amp; Keynotes</h3>
-          <p>For events, associations, and companies navigating the Gen X moment. Direct, practical, and built for people who've heard enough motivational speeches.</p>
-          <a class="go" href="mailto:BT@BrettTrainor.com?subject=Speaking%20inquiry">Check availability <span class="arrow">&rarr;</span></a>
-        </article>
+      <p class="sec-eyebrow">Also</p>
+      <h2>Talks &amp; keynotes.</h2>
+      <p class="lede">For events, associations, and companies navigating the Gen X moment. Direct, practical, and built for people who've heard enough motivational speeches.</p>
+      <div class="cta-row">
+        <a class="btn-ghost" href="mailto:BT@BrettTrainor.com?subject=Speaking%20inquiry">Check availability</a>
       </div>
     </div>
   </section>
@@ -346,9 +391,9 @@
   <!-- CTA -->
   <section class="cta-band">
     <div class="wrap">
-      <h2>Build your best life. On your own terms.</h2>
-      <p>Start with the newsletter. It's where I share everything I'm learning, first.</p>
-      <a class="btn" href="https://trpnewsletter.beehiiv.com/" target="_blank" rel="noopener">Get the newsletter</a>
+      <h2>The life you want costs money. Let's go make some.</h2>
+      <p>The Collective is where Gen X figures out how to fund it, without going back.</p>
+      <a class="btn" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Join The Collective</a>
     </div>
   </section>
 
@@ -357,17 +402,18 @@
 <footer>
   <div class="wrap">
     <div class="foot-inner">
-      <div class="foot-brand">Brett Trainor<small>Best life. Your terms.</small></div>
+      <div class="foot-brand">Brett Trainor<small>Build the life you&rsquo;ve earned.</small></div>
       <nav class="foot-nav" aria-label="Footer">
-        <a href="#content">Podcast &amp; Newsletter</a>
-        <a href="#pov">What I Believe</a>
+        <a href="#collective">The Collective</a>
+        <a href="#podcast">Podcast</a>
+        <a href="#newsletter">Newsletter</a>
         <a href="#story">About</a>
-        <a href="#work">Work With Me</a>
+        <a href="#work">Speaking</a>
         <a href="mailto:BT@BrettTrainor.com">Contact</a>
       </nav>
     </div>
     <div class="foot-legal">
-      <span>&copy; 2026 Brett Trainor. Best life. Your terms.</span>
+      <span>&copy; 2026 Brett Trainor. Build the life you&rsquo;ve earned.</span>
       <a href="mailto:BT@BrettTrainor.com" style="color:var(--green);font-weight:600">BT@BrettTrainor.com</a>
     </div>
   </div>
