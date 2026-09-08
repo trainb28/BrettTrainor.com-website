@@ -131,6 +131,17 @@
   .tcard p{color:var(--muted);font-size:16px}
   .tcard .go{margin-top:16px;font-weight:600;font-size:15px;color:var(--green);display:inline-flex;gap:7px}
 
+
+  /* work with me: two paths */
+  .paths{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+  .path{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:30px 28px;display:flex;flex-direction:column}
+  .path .ptag{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sand)}
+  .path h3{font-family:var(--display);font-size:26px;color:#fff;margin-top:10px;line-height:1.15}
+  .path .pfor{font-size:16px;font-weight:600;color:#E6A074;margin-top:8px}
+  .path p{font-size:16px;color:#C9C1B1;margin-top:12px;line-height:1.55}
+  .path .pmeta{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16);font-size:15px;color:#C9C1B1}
+  .path .pcta{margin-top:20px}
+  @media (max-width:920px){.paths{grid-template-columns:1fr}}
   /* cta */
   .cta-band{background:var(--green);color:#fff;text-align:center}
   .cta-band h2{color:#fff;max-width:18em;margin:0 auto}
@@ -207,11 +218,11 @@
   <div class="wrap head-inner">
     <a class="brand" href="#top">Brett Trainor<small>Build the life you&rsquo;ve earned.</small></a>
     <nav class="nav" aria-label="Primary">
-      <a href="#collective">The Collective</a>
+      <a href="#work">Work With Me</a>
       <a href="#podcast">Podcast</a>
       <a href="#newsletter">Newsletter</a>
       <a href="#story">About</a>
-      <a class="pill" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Join The Collective</a>
+      <a class="pill" href="#work">Work With Me</a>
     </nav>
     <button class="nav-toggle" onclick="document.querySelector('.nav').style.display='flex';this.style.display='none'">Menu</button>
   </div>
@@ -228,7 +239,7 @@
         <p class="sub">Corporate quit on me at 45. Six years later I've made money fifteen different ways, and I'm still figuring it out in public alongside a few thousand other Gen Xers.</p>
         <p class="sub" style="margin-top:16px">Corporate is ending earlier. We're living longer. Nobody wrote a playbook for this part, so I'm building one out loud. Testing what works, sharing what doesn't. In corporate or out.</p>
         <div class="cta-row">
-          <a class="btn" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Join The Collective</a>
+          <a class="btn" href="#work">Work with me</a>
           <a class="btn-ghost" href="https://open.spotify.com/show/5UQSv8iKydo8E2cevuIAB5" target="_blank" rel="noopener">Listen to the podcast</a>
         </div>
       </div>
@@ -253,29 +264,34 @@
     </div>
   </section>
 
-  <!-- THE COLLECTIVE -->
-  <section id="collective" class="collective">
+  <!-- WORK WITH ME -->
+  <section id="work" class="collective">
     <div class="wrap">
-      <p class="sec-eyebrow">The Collective</p>
+      <p class="sec-eyebrow">Work with me</p>
       <h2>The hard part isn't leaving. It's the money.</h2>
       <p class="lede">Every Gen Xer I talk to hits the same wall. You can picture the life you want. You just can't see how to pay for it without a job somebody else controls. That's the stone everybody has to get over, and it's the one thing you shouldn't try to figure out alone.</p>
-      <p class="lede" style="margin-top:14px">The Collective shortcuts the learning curve on making money outside of corporate. Not maximum revenue. Enough, in the fewest hours, so the time stays yours.</p>
+      <p class="lede" style="margin-top:14px">Two ways to do that with me, depending on where you are.</p>
 
-      <div class="sessions">
-        <article class="sess reveal"><div class="sn">01</div><div class="st">Monday Motivation &amp; Friday Finish</div><p>Weekly member-led accountability. Commit Monday, report Friday.</p></article>
-        <article class="sess reveal"><div class="sn">02</div><div class="st">Your peer group</div><p>Just Getting Started for your first revenue. The $10K Group for scaling what works.</p></article>
-        <article class="sess reveal"><div class="sn">03</div><div class="st">Sales &amp; Marketing 101</div><p>One topic a month, then open Q&amp;A. Pricing, outreach, positioning, closing.</p></article>
-        <article class="sess reveal"><div class="sn">04</div><div class="st">Collaboration &amp; Ideation</div><p>Where we find revenue streams that repeat, and share the ones that work.</p></article>
-        <article class="sess reveal"><div class="sn">05</div><div class="st">Guest sessions</div><p>People who built something, telling you how. Including what failed.</p></article>
-        <article class="sess reveal"><div class="sn">06</div><div class="st">Local chapters</div><p>Peers in your city. A coffee beats a Zoom square.</p></article>
-        <article class="sess reveal"><div class="sn">07</div><div class="st">Sales &amp; Marketing Q&amp;A chat</div><p>Ask any day. Answers from people who already solved it.</p></article>
-        <article class="sess reveal"><div class="sn">&#43;</div><div class="st">You don't have to have quit</div><p>Building income while you still have a paycheck is the easiest version of this you'll ever get.</p></article>
-      </div>
+      <div class="paths">
+        <article class="path reveal">
+          <div class="ptag">1 on 1 &middot; A few clients at a time</div>
+          <h3>Coaching</h3>
+          <div class="pfor">For the escape itself.</div>
+          <p>You're planning your way out, or you just got pushed out, and you want somebody in your corner while you figure out what's next. Not a course. Not a group. Just us, working on your actual situation.</p>
+          <p>Where the money comes from. What you're building. What to do first, and what to ignore entirely. I've done this with hundreds of people and it's still the part of the week I like best.</p>
+          <div class="pmeta">I keep this to a handful of people at a time, because it only works if I'm actually paying attention. When it's full, it's full.</div>
+          <div class="pcta"><a class="btn-light" href="mailto:BT@BrettTrainor.com?subject=1:1%20Coaching">See if it's a fit</a></div>
+        </article>
 
-      <div class="price-row">
-        <div class="price">$149<span>/month</span></div>
-        <p>Cancel anytime. Most sessions are led by members and guests, not by me. That's the point.</p>
-        <a class="btn-light" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Join The Collective</a>
+        <article class="path reveal">
+          <div class="ptag">Membership &middot; $79/month</div>
+          <h3>Solo Business Hotline</h3>
+          <div class="pfor">For once you're building.</div>
+          <p>You're out, or you've got something going on the side, and mostly what you need is somebody to ask. Pricing, proposals, a stalled deal, whatever's got you stuck this week.</p>
+          <p>Unlimited answers from me and our experts, 1-on-1 calls when a thread isn't enough, and a few hundred other solo owners running a business exactly your size. This is where The Collective lives now.</p>
+          <div class="pmeta">No hourly rates, no packages, no retainer. Cancel anytime.</div>
+          <div class="pcta"><a class="btn-light" href="https://solobusinesshotline.com" target="_blank" rel="noopener">See the Hotline</a></div>
+        </article>
       </div>
     </div>
   </section>
@@ -377,7 +393,7 @@
   </section>
 
   <!-- SPEAKING -->
-  <section id="work">
+  <section id="speaking">
     <div class="wrap">
       <p class="sec-eyebrow">Also</p>
       <h2>Talks &amp; keynotes.</h2>
@@ -392,8 +408,8 @@
   <section class="cta-band">
     <div class="wrap">
       <h2>The life you want costs money. Let's go make some.</h2>
-      <p>The Collective is where Gen X figures out how to fund it, without going back.</p>
-      <a class="btn" href="https://trp-collective.circle.so/checkout/the-time-rich-project-collective" target="_blank" rel="noopener">Join The Collective</a>
+      <p>Coaching if you're making the move. The Hotline if you're already building.</p>
+      <a class="btn" href="#work">See both</a>
     </div>
   </section>
 
@@ -404,11 +420,11 @@
     <div class="foot-inner">
       <div class="foot-brand">Brett Trainor<small>Build the life you&rsquo;ve earned.</small></div>
       <nav class="foot-nav" aria-label="Footer">
-        <a href="#collective">The Collective</a>
+        <a href="#work">Work With Me</a>
         <a href="#podcast">Podcast</a>
         <a href="#newsletter">Newsletter</a>
         <a href="#story">About</a>
-        <a href="#work">Speaking</a>
+        <a href="#speaking">Speaking</a>
         <a href="mailto:BT@BrettTrainor.com">Contact</a>
       </nav>
     </div>
