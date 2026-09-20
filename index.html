@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brett Trainor: An educated point of view for Gen X</title>
-<meta name="description" content="Build the life you want and fund it in the fewest hours possible. The Collective, Brett Trainor Unplugged, and Brett's Notebook, for corporate Gen X in or out. Brett's Notebook newsletter and the Brett Trainor Unplugged podcast. Featured in Fortune, Forbes, HBR, and Inc.">
+<meta name="description" content="Build the life you want and fund it in the fewest hours possible. The Escapee Collective, Brett Trainor Unplugged, and Brett's Notebook, for corporate Gen X in or out. Featured in Fortune, Forbes, HBR, and Inc.">
 
 <meta property="og:title" content="Brett Trainor">
 <meta property="og:description" content="Build the life you want and fund it in the fewest hours possible. For corporate Gen X, in or out.">
@@ -18,7 +18,7 @@
 <style>
   :root{
     --cream:#FBF3E2; --cream-2:#FCF6E8; --green:#0A4B39; --pine:#073D2F;
-    --orange:#C75D3A; --orange-d:#A8492A; --ink:#3E3128; --muted:#7A6C5C;
+    --orange:#C75D3A; --orange-d:#A8492A; --sand:#E6A074; --ink:#3E3128; --muted:#7A6C5C;
     --line:#E7D9C0; --display:'Cinzel',Georgia,serif;
     --body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
     --wrap:1120px; --r:14px;
@@ -142,6 +142,13 @@
   .path .pmeta{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16);font-size:15px;color:#C9C1B1}
   .path .pcta{margin-top:20px}
   @media (max-width:920px){.paths{grid-template-columns:1fr}}
+  /* speaking photo */
+  .speak-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .speak-img{position:relative;display:flex;justify-content:center;align-items:flex-end}
+  .speak-img:before{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:300px;height:300px;border-radius:50%;background:var(--cream-2);border:1px solid var(--line)}
+  .speak-img img{position:relative;width:100%;max-width:330px;height:auto;display:block}
+  @media (max-width:920px){.speak-grid{grid-template-columns:1fr;gap:30px}}
+
   /* cta */
   .cta-band{background:var(--green);color:#fff;text-align:center}
   .cta-band h2{color:#fff;max-width:18em;margin:0 auto}
@@ -285,12 +292,12 @@
 
         <article class="path reveal">
           <div class="ptag">Membership &middot; $79/month</div>
-          <h3>Solo Business Hotline</h3>
-          <div class="pfor">For once you're building.</div>
-          <p>You're out, or you've got something going on the side, and mostly what you need is somebody to ask. Pricing, proposals, a stalled deal, whatever's got you stuck this week.</p>
-          <p>Unlimited answers from me and our experts, 1-on-1 calls when a thread isn't enough, and a few hundred other solo owners running a business exactly your size. This is where The Collective lives now.</p>
+          <h3>The Escapee Collective</h3>
+          <div class="pfor">For not doing it alone.</div>
+          <p>You're out, you're on your way out, or you've got something going on the side. What you need most is people who get it, and somebody to ask when you're stuck.</p>
+          <p>A community of Gen X escapees, unlimited 1:1 calls with 30+ mentors who've already done it, and local networking in real cities. Weekly accountability, monthly masterminds, member-led workshops.</p>
           <div class="pmeta">No hourly rates, no packages, no retainer. Cancel anytime.</div>
-          <div class="pcta"><a class="btn-light" href="https://solobusinesshotline.com" target="_blank" rel="noopener">See the Hotline</a></div>
+          <div class="pcta"><a class="btn-light" href="https://theescapeecollective.com" target="_blank" rel="noopener">See the Collective</a></div>
         </article>
       </div>
     </div>
@@ -394,12 +401,17 @@
 
   <!-- SPEAKING -->
   <section id="speaking">
-    <div class="wrap">
-      <p class="sec-eyebrow">Also</p>
-      <h2>Talks &amp; keynotes.</h2>
-      <p class="lede">For events, associations, and companies navigating the Gen X moment. Direct, practical, and built for people who've heard enough motivational speeches.</p>
-      <div class="cta-row">
-        <a class="btn-ghost" href="mailto:BT@BrettTrainor.com?subject=Speaking%20inquiry">Check availability</a>
+    <div class="wrap speak-grid">
+      <div>
+        <p class="sec-eyebrow">Also</p>
+        <h2>Talks &amp; keynotes.</h2>
+        <p class="lede">For events, associations, and companies navigating the Gen X moment. Direct, practical, and built for people who've heard enough motivational speeches.</p>
+        <div class="cta-row">
+          <a class="btn-ghost" href="mailto:BT@BrettTrainor.com?subject=Speaking%20inquiry">Check availability</a>
+        </div>
+      </div>
+      <div class="speak-img">
+        <img src="brett-speaking.png" alt="Brett Trainor speaking at an event" loading="lazy">
       </div>
     </div>
   </section>
@@ -408,7 +420,7 @@
   <section class="cta-band">
     <div class="wrap">
       <h2>The life you want costs money. Let's go make some.</h2>
-      <p>Coaching if you're making the move. The Hotline if you're already building.</p>
+      <p>Coaching if you're making the move. The Collective if you'd rather not do it alone.</p>
       <a class="btn" href="#work">See both</a>
     </div>
   </section>
